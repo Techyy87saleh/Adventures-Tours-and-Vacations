@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        body{
+            height:100vh;
+            margin:2em;
+        }
+        .container{
+            height:100vh;
+            justify-content: center;
+            display:grid;
+            gap:10px;
+            grid-template-columns: 300px 300px 330px;
+            grid-template-rows:repeat(3,200px);
+        
+ 
+ 
+            gap:10px;
+            grid-template-areas:   
+            "h s m"
+            "c i m "
+
+            "n n f"            
+ 
+
+        }
+        .header{
+            background:red;
+            grid-area:h;
+        }
+        .header img{
+
+            width:100%;
+            height:100%;
+            object-fit:fill;
+            display: block;
+         
+        }
+        .sidebar{
+            background:blue;
+            grid-area:s;
+        }
+        .sidebar img{
+            
+            width:100%;
+            height:100%;
+            object-fit:fill;
+            display: block;
+         
+        
+        }
+        .main{
+            background:green;
+            grid-area:m;
+        }
+        .main img{
+
+
+  
+            width:100%;
+            height:100%;
+            object-fit:fill;
+            display: block;
+        }
+        .content{
+            background:brown;
+            grid-area:c;
+        }
+        .content img{
+            width:100%;
+            height:100%;
+            object-fit:fill;
+            display: block;
+        }
+        .images{
+            background:black;
+            grid-area:i;
+        }
+        .images img{
+
+            width:100%;
+            height:100%;
+            object-fit:fill;
+            display: block;
+        
+        }
+        .nav{
+            background:yellow;
+            grid-area:n
+        }
+        .nav img{
+            width:100%;
+            height:100%;
+            object-fit:fill;
+            display: block;
+        }
+        .footer{
+            background:pink;
+            grid-area:f
+            
+        }
+        .footer img{
+
+            width:100%;
+            height:100%;
+            object-fit:fill;
+            display: block;
+        }
+        @media(max-width:767px){
+          .container{
+              display: flex;
+              flex-direction: column;
+            }
+        }
+    </style>
+
+    <div class = "container">
+        <div class = "header">
+        <img src = "1.jpg" alt="">
+        </div>
+        <div class = "sidebar">
+            <img src = "2.jpg" alt="">
+    </div>
+        <div class = "main">
+            <img src = "3.jpg" alt="">
+        </div>
+        <div class = "content">
+
+            <img src = "4.jpg" alt="">
+            
+        </div>
+        <div class = "images">
+            <img src = "5.jpg" alt="">
+        </div>
+        <div class = "nav">
+            <img src = "6.jpg" alt="">
+        </div>
+        <div class = "footer">
+            <img src = "7.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
